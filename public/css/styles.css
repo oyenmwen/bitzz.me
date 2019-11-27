@@ -1,0 +1,214 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #585858;
+}
+
+.urls {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.input-bar {
+  padding-top: 3.65%;
+  padding-bottom: 3.65%;
+}
+
+.btn {
+  color: white;
+  background-color: #083796;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.a {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding-right: 10%;
+}
+
+.container {
+  padding-top: 3%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #585858;
+}
+
+.link {
+  display: inline-block;
+  width: 12%;
+  position: relative;
+  -webkit-animation: myfirst 3s 2;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: myfirst 3s 2;
+  /* Safari 4.0 - 8.0 */
+  -moz-animation-direction: alternate;
+  /* Safari 4.0 - 8.0 */
+  -moz-animation-iteration-count: infinite;
+  animation: myfirst 3s 2;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+.shorten {
+  background-color: #0B1636;
+}
+
+.jumbo {
+  padding-left: 15%;
+}
+
+.copy-btn {
+  background-color: #e9f1ef;
+  font-weight: lighter;
+  color: #007BFF;
+}
+
+.jumbo-btn {
+  background-color: #47a897
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.jumbo-btn:hover {
+  border-color: green;
+  border-width: 1px;
+  color: white;
+}
+
+.copy-btn:hover {
+  background-color: #d3ece6;
+  color: #8eb1d8;
+}
+
+.urls a {
+  color: #007BFF;
+}
+
+.long {
+  text-align: left;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 100px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@-moz-keyframes myfirst {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 100px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 30px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.hands {
+  width: 100%;
+  bottom: 25%;
+  /* left:10%; */
+  position: relative;
+}
+
+.why {
+  background-color: white;
+  padding-right: 0;
+}
+
+.why h1 {
+  font-size: 6em;
+}
+
+.why h3 {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+.get-btn {
+  color: #2f7664;
+}
+
+.get-btn:hover {
+  color: #2f7664;
+}
+
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+@media all and (max-width:800px) {
+  .bloc {
+    width: 100%;
+    display: block;
+  }
+
+  .input-bar {
+    padding: 9% 5%;
+  }
+
+  .link {
+    visibility: hidden;
+    width: 0;
+  }
+
+  .urls {
+    border-radius: 4px;
+  }
+}

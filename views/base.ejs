@@ -1,0 +1,140 @@
+<%- include("header") -%>
+
+<div class="container-fluid jumbo mb-5  pb-5 pt-3">
+  <div class="row">
+    <div class="col col-12 mt-lg-3 pt-lg-5">
+      <h1>Create Bitzz-Sized Links <img src="/images/link.png" class="link ml-lg-5" alt=""> </h1>
+
+
+      <h4 class="mr-md-5 pr-md-5 py-3">Make your links more manageable and promote sharing</h4>
+      <a href="#input" class="mr-5 pr-5"><button id="s" class="btn btn-lg mt-4 py-3  jumbo-btn" type="button" name="button">Shorten Links for Free</button></a>
+
+    </div>
+
+  </div>
+</div>
+
+<span class="my-5 py-5" id="input"></span>
+
+
+<div class="container-fluid shorten px-lg-5 px-0 pb-5">
+  <div class="container">
+
+
+    <div class="row mt-lg-0 mt-5">
+      <div class="col col-lg-9 col-12">
+        <form action="/shorten" method="POST">
+          <input class="form-control form-control-lg m-0 input-bar" required="required" placeholder="Bitzz size your URL" type="text" name="longUrl">
+      </div>
+      <div class="col col-lg-3 col-12 ">
+        <button class="btn bloc btn-primary btn-lg m-lg-0 mt-3 mr-lg-5 py-3 px-5" type="submit">Bitzz-Size it!</button>
+      </div>
+      </form>
+
+
+      <% for(var i=1; (typeof urls!= "undefined") && i < urls.length; i++) { %>
+      <%var e = urls.pop();%>
+      <div class="container-fluid px-lg-3 px-3 pr-lg-5 pb-lg-5">
+
+
+        <div class="container mt-lg-5 mt-4  px-lg-0  urls">
+
+
+          <div class="row" id="newUrl">
+            <div class="col  pl-5 mx-0 pt-lg-1 pt-3 long col-lg-7 col-12">
+              <p> <%= e.longUrl %> </p>
+            </div>
+            <div class="col col-lg-5 col-12 px-4 short p-lg-0 px-0 pr-lg-0 mr-lg-0">
+              <a href="<%= e.shortUrl %>" id="<%= i %>"><%= e.shortUrl %></a>
+              <button class="btn copy-btn ml-lg-4 mt-lg-0 mt-3 mr-0 bloc" id="btnCopy" name="<%= e.shortUrl %>" onclick="copy(this)" data-toggle="tooltip" data-placement="top" title="Copied!">Copy</button>
+            </div>
+          </div>
+          <hr />
+
+          <%}%>
+
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid why pr-2" id="why">
+  <div class="container pt-lg-5 pt-3">
+    <h1 class="pt-5 mt-3 pb-1" style="font-size:2.2em;">Grow Your Brand With Every Click</h1>
+    <h6 class="pb-lg-5">Shortend links can have a 34% higher click-through versus non-shortend links.</h6>
+    <div class="row py-5">
+
+      <div class="col col-md-4  col-12">
+
+        <div class="card py-lg-5 pb-3 pt-5 px-4">
+          <h1>🔎</h1>
+            <h3 class="card-title">Improve Legibility</h3>
+          <div class="card-body">
+            <p class="card-text">Improve link legibility and familiarity</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col col-md-4  col-12">
+
+        <div class="card py-lg-5 pb-3 pt-3 px-4">
+          <h1>🤝</h1>
+            <h3 class="card-title">Create Trust</h3>
+          <div class="card-body">
+            <p class="card-text">Long URLs are often perceived as spammy, create trust with clean, short links</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col col-md-4 col-12">
+
+        <div class="card py-lg-5 pb-3 pt-3 px-4">
+          <h1>📢</h1>
+            <h3 class="card-title">Promote Sharing</h3>
+          <div class="card-body">
+            <p class="card-text">Shorter links more encouraging to share, thus increasing traffic</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="row mt-lg-5 mt-3 ">
+      <div class="col col-12">
+    <a href="#input"><button class="btn copy-btn mb-5 py-4 get-btn px-5 bloc" >Get Started</button></a>
+      </div>
+
+    </div>
+
+    <hr class="my-3 pt-0 pb-5 my-lg-5">
+      <h1 style="font-size:2em;">The world's biggest brands shorten their links</h1>
+      <div class="row mt-5 mb-2 my-lg-5">
+    <div class="col col-md-3 col-6">
+      <embed src="/images/amazon.svg" width="150px" height="auto">
+    </div>
+    <div class="col col-md-3 col-6">
+      <embed src="/images/nike.svg" width="150px" height="auto">
+    </div>
+    <div class="col col-md-3 col-6">
+      <embed src="/images/disney.svg" width="150px" height="auto">
+    </div>
+    <div class="col col-md-3 col-6">
+      <embed src="/images/espn.svg" width="150px" height="auto">
+    </div>
+      </div>
+
+</div>
+
+
+        </div>
+
+        <div class="container-fluid p-5 pb-5" style="background-color:#0B1636;color:white">
+          <h1 style="font-size:2em" class="mt-5">Take your links to a new level</h1>
+          <a href="#input" class="mb-5"><button class="btn bloc btn-lg mb-5 mt-4 py-3 btn-primary" id="o"  type="button" name="button">Bitzz Size for Free</button></a>
+
+
+        </div>
