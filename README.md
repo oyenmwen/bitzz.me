@@ -20,11 +20,16 @@ Initiate the server with `` > node app.js ``
 
 Visit ``localhost:5000`` on a browser 💻
 
+#
 #### FUTURE ITERATIONS
-⭕️Change the code quite a bit.
-⭕️Change the links container through DOM instead of EJS 
-⭕️ Analytics! (Click #’s, country of visit etc.)
-⭕️ Log in/ user system
+
+- Change the code quite a bit.
+
+- Change the links container through DOM instead of EJS 
+
+-  Analytics! (Click #’s, country of visit etc.)
+
+- Log in/ user system
 
 #
 #### Credits
